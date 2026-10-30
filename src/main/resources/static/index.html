@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TonySystems - Assistência técnica de televisores"
+    />
+    <link rel="icon" href="icons/televisao.svg" type="image/svg+xml" />
+    <title>TonySystems | Assistência Técnica</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Ir para o conteúdo</a>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">
+          <span class="brand-symbol"
+            ><svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="5" width="18" height="14" rx="3" />
+              <path d="M8 22h8M12 19v3M8 10h8M8 14h5" /></svg></span
+          ><span class="brand-text"
+            ><strong>TonySystems</strong
+            ><small>Assistência técnica</small></span
+          >
+        </div>
+        <nav aria-label="Menu principal">
+          <button type="button" data-page="inicio" class="active">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m3 10 9-7 9 7" />
+              <path d="M5 9v12h14V9" />
+              <path d="M9 21v-7h6v7" /></svg
+            ><span class="nav-label">Início</span>
+          </button>
+          <button type="button" data-page="clientes">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path
+                d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"
+              /></svg
+            ><span class="nav-label">Clientes</span>
+          </button>
+          <button type="button" data-page="televisoes">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="4" width="20" height="15" rx="2" />
+              <path d="M8 22h8M12 19v3" /></svg
+            ><span class="nav-label">Televisões</span>
+          </button>
+          <button type="button" data-page="materiais">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="m12 2 9 5-9 5-9-5 9-5ZM3 7v10l9 5 9-5V7M12 12v10" /></svg
+            ><span class="nav-label">Materiais</span>
+          </button>
+          <button type="button" data-page="novaos">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path
+                d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"
+              />
+              <path d="M14 2v6h6M12 12v6M9 15h6" /></svg
+            ><span class="nav-label">Abrir OS</span>
+          </button>
+          <button type="button" data-page="ordens">
+            <svg
+              class="ui-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.9"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="5" y="4" width="14" height="18" rx="2" />
+              <rect x="9" y="2" width="6" height="4" rx="1" />
+              <path d="M9 12h6M9 16h6" /></svg
+            ><span class="nav-label">Gerenciar OS</span>
+          </button>
+        </nav>
+        <div class="sidebar-foot">TonySystems • Assistência técnica</div>
+      </aside>
+      <main id="principal" tabindex="-1">
+        <header>
+          <div>
+            <p class="eyebrow">Atendimento da oficina</p>
+            <h1 id="page-title" tabindex="-1">Início</h1>
+            <p id="page-subtitle">O que você deseja fazer hoje?</p>
+          </div>
+        </header>
+        <div id="notice" role="status" aria-live="polite"></div>
+        <section id="content" aria-label="Conteúdo da página"></section>
+      </main>
+    </div>
+    <script src="js/app.js" defer></script>
+    <dialog
+      id="confirmation"
+      aria-labelledby="confirmation-title"
+      aria-describedby="confirmation-message"
+    >
+      <form method="dialog">
+        <h2 id="confirmation-title">Confirmar ação</h2>
+        <p id="confirmation-message"></p>
+        <div class="actions">
+          <button class="btn secondary" value="cancel" autofocus>
+            Cancelar
+          </button>
+          <button class="btn" id="confirmation-accept" value="confirm">
+            Confirmar
+          </button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
